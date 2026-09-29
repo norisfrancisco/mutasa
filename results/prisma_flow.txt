@@ -1,0 +1,34 @@
+====================================================================
+  PRISMA FLOW DIAGRAM — Title/Abstract Screening
+====================================================================
+
+  Records retrieved from Scopus                 408
+
+  ── Stage 1: Year filter ────────────────────────────────
+  Excluded (Excl_Período, year < 2010)            20
+
+  ── Stage 2: Document type filter ───────────────────────
+  Excluded (Excl_TipoEstudo)                      54
+    (books, book chapters, editorials, notes)
+
+  ── Stage 3: Deduplication ──────────────────────────────
+  Excluded (Excl_Duplicado)                        2
+
+  ── Stage 4: PECO keyword screening ─────────────────────
+  Excluded (Excl_População)                        0
+  Excluded (Excl_Geografia)                        0
+  Excluded (Excl_Modalidade)                       0
+  Excluded (Excl_Desfecho)                         0
+  Excluded (Excl_Tema)                             0
+  Excluded (Excl_Dados)                            0
+
+  ── Summary ──────────────────────────────────────────────
+  Total excluded                                  76
+  INCLUDE (all 4 PECO dimensions clearly met)    324
+  MAYBE   (uncertain, forwarded to full text)      8
+  ─────────────────────────────────────────────────────
+  Forwarded to full-text review (INCLUDE+MAYBE)  332
+
+  NOTE: MAYBE records must be reviewed manually.
+        At title/abstract phase, uncertainty → include (conservative rule).
+====================================================================
